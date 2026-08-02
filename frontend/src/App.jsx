@@ -13,7 +13,7 @@ function App() {
     if (!url) return;
 
     try {
-      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3000';
+      const backendUrl = import.meta.env.VITE_BACKEND_URL;;
       const res = await axios.post(`${backendUrl}/api/short`, {
         originalUrl: url,
       });
